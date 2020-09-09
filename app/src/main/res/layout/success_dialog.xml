@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/success"
+            android:layout_centerInParent="true"
+            android:id="@+id/imageView"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Submission Successful"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="40dp"
+        android:textSize="16dp" />
+
+</LinearLayout>
