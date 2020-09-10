@@ -52,19 +52,19 @@ TextView name,lname,email,link;
         String flink = link.getText().toString();
 
         final Googleform googleform= serviceBuilder.buildService(Googleform.class);
-        final Call<myinfo> complete = googleform.gform(fname, fmail, flname, flink);
+        final Call<Void> complete = googleform.gform(fname, fmail, flname, flink);
             complete.enqueue(Callback);
     }
 
-    private final Callback<myinfo> Callback = new Callback<myinfo>() {
+    private final Callback<Void> Callback =  new Callback<Void>() {
         @Override
-        public void onResponse(Call<myinfo> call, Response<myinfo> response) {
-successdialog();
+        public void onResponse(Call<Void> call, Response<Void> response) {
+            successdialog();
         }
 
         @Override
-        public void onFailure(Call<myinfo> call, Throwable throwable) {
-faildialog();
+        public void onFailure(Call<Void> call, Throwable throwable) {
+            faildialog();
         }
 
 
